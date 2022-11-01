@@ -1,0 +1,18 @@
+---
+version: 1
+applications:
+  - name: prepack-service-dev
+    stack: cflinuxfs3
+    buildpacks:
+      - java_buildpack_offline
+    memory: 2G
+    instances: 2
+    health-check-invocation-timeout: 180
+    health-check-type: port
+#    health-check-http-endpoint: /_manage/health
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: "{ jre: { version: 1.8.+ }}"
+      SPRING_PROFILES_ACTIVE: ((SPRING_PROFILES_ACTIVE))
+      SPRING_CLOUD_CONFIG_URI: ((SPRING_CLOUD_CONFIG_URI))
+      SPRING_CLOUD_CONFIG_LABEL: ((SPRING_CLOUD_CONFIG_LABEL))
+      ENCRYPT_KEY: ((ENCRYPT_KEY))

@@ -1,0 +1,26 @@
+body {
+    font-family: Poppins, sans-serif;
+}
+section {
+    background: red;
+}
+/*
+Element selector
+*/
+h1 {
+    color: aliceblue;
+    font-family: "Sofia", sans-serif;
+}
+/*
+Class selector
+*/
+.section-heading {
+    color: green;
+    font-family: inherit;
+}
+/*
+ID selector
+*/
+#heading {
+    color: blue;
+}
