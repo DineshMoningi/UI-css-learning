@@ -1,0 +1,21 @@
+.content_div_first_box {
+    padding: 10px 20px 30px 40px;
+    border: 5px solid black;
+    margin: 10px 20px 30px 40px;
+    height: 300px;
+    width: 50%;
+    display: inline-block;
+    /* display: none;
+    visibility: hidden; */
+}
+
+.content_div_second_box {
+    padding: 10px 20px 30px 40px;
+    border: 5px solid black;
+    margin: 10px 20px 30px 40px;
+    display: inline-block;
+}
+
+div:last-of-type:hover {
+    border-color: red;
+}
