@@ -145,3 +145,20 @@ body {
 .plan--highlighted .plan__price{
     color: darkgreen;
 }
+
+.button {
+    background: darkgreen;
+    color: white;
+    font: inherit; /*Set inherited properties not the browser applied properties*/
+    border-radius: 8px;
+    border: 1.5px solid darkgreen;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: darkgreen;
+}
