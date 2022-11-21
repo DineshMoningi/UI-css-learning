@@ -167,3 +167,43 @@ body {
 .button:focus {
     outline: none;
 }
+
+#key-features {
+    background: rgb(184, 87, 87);
+    margin-top: 80px;
+    padding: 16px;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
+.key-feature__list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.key-feature__image {
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+}
