@@ -162,3 +162,8 @@ body {
     background: white;
     color: darkgreen;
 }
+
+/* To not allow inherited properties */
+.button:focus {
+    outline: none;
+}
