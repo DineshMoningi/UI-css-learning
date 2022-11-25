@@ -113,3 +113,9 @@
     height: 128px;
     margin: auto;
 }
+
+.plan__list {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
