@@ -1,77 +1,89 @@
 main {
-    padding-top: 32px;
+  padding-top: 32px;
 }
 
 .background {
-    background: url('../asserts/plans-background.jpg');
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1; /* auto/0 will be default value +ve and -ve value can be assigned*/
+  background: url("../asserts/plans-background.jpg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1; /* auto/0 will be default value +ve and -ve value can be assigned*/
 }
 
 .package-section {
-    border: 4px solid darkgreen;
-    padding: 20px;
-    width: 70%;;
-    margin: 16px 0px;
-    border-left: none;
+  border: 4px solid darkgreen;
+  padding: 20px;
+  width: 70%;
+  margin: 16px 0px;
+  border-left: none;
+  position: relative;
+}
+
+.package-section__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  font-size: 20px;
+  color: white;
+  background: #ff5454;
+  padding: 8px;
 }
 
 .package-section:hover,
 .package-section:active {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0, 0.5);
-    border-color: #da0d0d;
-    /* border-color: #da0d0d !important; */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0, 0.5);
+  border-color: #da0d0d;
+  /* border-color: #da0d0d !important; */
 }
 
 .package-section a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    padding: 32px;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 32px;
 }
 
 .package-section__subtitle {
-    color: #a39c9c
+  color: #a39c9c;
 }
 
 .package-section__info {
-    padding: 16px;
-    border: 1px solid #025a02;
-    font-size: 20px;
-    color: #025a02;
-    background: white;
+  padding: 16px;
+  border: 1px solid #025a02;
+  font-size: 20px;
+  color: #025a02;
+  background: white;
 }
 
 .clear-fix {
-    clear: both;
+  clear: both;
 }
 
 #plus {
-    background: rgba(213, 255, 220, 0.95);
+  background: rgba(213, 255, 220, 0.95);
 }
 
 #free:active,
 #free:hover {
-    border-left-color: #da0d0d;
+  border-left-color: #da0d0d;
 }
 
 #free {
-    background: rgba(234, 252, 237, 0.95);
-    float: right;
-    border-left: none;
-    border-left: 4px solid darkgreen;
+  background: rgba(234, 252, 237, 0.95);
+  float: right;
+  border-left: none;
+  border-left: 4px solid darkgreen;
 }
 
 #premium {
-    background: rgba(14, 79, 31, 0.95);
+  background: rgba(14, 79, 31, 0.95);
 }
 
 #premium .package-section__heading {
-    color: white;
+  color: white;
 }
 
 #premium .package-section__subtitle {
-    color: #bbb;
+  color: #bbb;
 }
