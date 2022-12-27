@@ -7,35 +7,14 @@ body {
     margin: 0;
 }
 
-.button {
-    background: darkgreen;
-    color: white;
-    font: inherit; /*Set inherited properties not the browser applied properties*/
-    border-radius: 8px;
-    border: 1.5px solid darkgreen;
-    padding: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button:hover,
-.button:active {
-    background: white;
-    color: darkgreen;
-}
-
-/* To not allow inherited properties */
-.button:focus {
-    outline: none;
-}
-
 .main-header {
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     background: #2ddf5c;
     padding: 8px 16px;
-    position: sticky;
-    top: 0;
-    z-index: 20;
+    z-index: 1;
 }
 
 .main-header > div {
@@ -48,6 +27,14 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+    height: 22px;
+    /* width: 20px; */
+    display: inline-block;
+}
+
+.main-header__brand img {
+    height: 100%;
+    /* width: 100%; */
 }
 
 .main-nav {
@@ -103,14 +90,14 @@ body {
 
 .main-footer__links {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
 .main-footer__link {
     display: inline-block;
-    margin: 0px 16px;
+    margin: 0 16px;
 }
 
 .main-footer__link a {
@@ -121,4 +108,25 @@ body {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #ccc;
+}
+
+.button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
 }
