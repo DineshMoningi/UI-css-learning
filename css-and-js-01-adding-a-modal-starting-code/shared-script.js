@@ -6,8 +6,10 @@ const toggleButton = document.querySelector(".toggle-button");
 
 for (let i = 0; i < choosePlanButton.length; i++) {
   choosePlanButton[i].addEventListener("click", function () {
-    backdrop.style.display = "block";
-    modal.style.display = "block";
+    // backdrop.style.display = "block";
+    // modal.style.display = "block";
+    backdrop.classList.add("open");
+    modal.classList.add("open");
   });
 }
 
@@ -18,16 +20,21 @@ console.dir(noButton);
 
 noButton.addEventListener("click", closeModal);
 backdrop.addEventListener("click", function () {
-  mobileNavigation.style.display = "none";
+  //   mobileNavigation.style.display = "none";
+  mobileNavigation.classList.remove("open");
   closeModal();
 });
 
 function closeModal() {
-  backdrop.style.display = "none";
-  modal.style.display = "none";
+  //   backdrop.style.display = "none";
+  //   modal.style.display = "none";
+  backdrop.classList.remove("open");
+  modal.classList.remove("open");
 }
 
 toggleButton.addEventListener("click", function () {
-  mobileNavigation.style.display = "block";
-  backdrop.style.display = "block";
+  //   mobileNavigation.style.display = "block";
+  //   backdrop.style.display = "block";
+  mobileNavigation.classList.add("open");
+  backdrop.classList.add("open");
 });
