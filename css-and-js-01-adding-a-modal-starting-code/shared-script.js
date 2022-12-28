@@ -9,16 +9,19 @@ for (let i = 0; i < choosePlanButton.length; i++) {
     // backdrop.style.display = "block";
     // modal.style.display = "block";
     backdrop.classList.add("open");
-    modal.classList.add("open");
+    if (modal) {
+      modal.classList.add("open");
+    }
   });
 }
 
 // When clicked on "No" button Close the modal dialog and backdrop
 const noButton = document.querySelector(".modal button");
 
-console.dir(noButton);
+if (noButton) {
+  noButton.addEventListener("click", closeModal);
+}
 
-noButton.addEventListener("click", closeModal);
 backdrop.addEventListener("click", function () {
   //   mobileNavigation.style.display = "none";
   mobileNavigation.classList.remove("open");
@@ -29,7 +32,9 @@ function closeModal() {
   //   backdrop.style.display = "none";
   //   modal.style.display = "none";
   backdrop.classList.remove("open");
-  modal.classList.remove("open");
+  if (modal) {
+    modal.classList.remove("open");
+  }
 }
 
 toggleButton.addEventListener("click", function () {
