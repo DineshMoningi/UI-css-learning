@@ -196,7 +196,10 @@ body {
 .open {
   display: block !important;
 }
-
+/* , act like or - either or 
+Ex:
+@media (min-width: 40rem) , (min-height: 50rem)
+*/
 @media (min-width: 40rem) {
   .toggle-button {
     display: none;

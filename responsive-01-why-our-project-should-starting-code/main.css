@@ -200,7 +200,10 @@
     max-width: 25rem;
   }
 }
-
+/* and operator is use to combine two conditions
+Ex:
+@media (min-width: 60rem) and (orientation: portrait)
+*/
 @media (min-width: 60rem) {
   #product-overview {
     height: 30vh;
